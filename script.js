@@ -21,4 +21,6 @@ function solve(digit,index,ans,output){
         solve(digit,index+1,ans,output);
         output.pop();
     }
+
+	module.exports = letterCombinations
 }
