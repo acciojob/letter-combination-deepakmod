@@ -1,13 +1,16 @@
 let keys=["0","1","abc","def","ghi","jkl","mno","pqrs","tuv","wxyz"];
+
 function letterCombinations(digit) {
-  let ans=[];
   let output=[];
   let index=0;
-  return solve(digit,index,ans,output);
+  let ans=[];
+  solve(digit,index,ans,output);
+  return ans;
 }
 function solve(digit,index,ans,output){
     if(index>=digit.length){
-        return ans.push(output.join(""));
+        ans.push(output.join(""));
+        return;
     }
     
     let number=parseInt(digit[index]);
