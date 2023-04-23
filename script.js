@@ -22,5 +22,5 @@ function solve(digit,index,ans,output){
         output.pop();
     }
 
-	module.exports = letterCombinations
 }
+module.exports = letterCombinations
